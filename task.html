@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mindease Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="styles/task.css" rel="stylesheet">
+</head>
+<body>
+  <div class="main-container">
+    <div class="sidebar">
+      <div>
+        <div class="logo">🧠</div>
+        <div class="title"> Mindease</div>
+        <div class="menu">
+          <a href="#"><i class="fa-etch fa-solid fa-house"></i> Home</a>
+          <a href="#"><i class="fa-solid fa-calendar-check"></i> Appointments</a>
+          <a href="#"><i class="fa-sharp fa-solid fa-hospital-user"></i> Patient List</a>
+          <a href="#">
+          <i class="fa-solid fa-comments"></i> Messages
+          <span class="badge">5</span>
+          </a>
+          <a href="#"><i class="fa-solid fa-book-open"></i> Resources</a>
+          <a href="#"><i class="fa-solid fa-money-bills"></i> Billing</a>
+        </div>
+      </div>
+      <div class="premium">
+        <div class="flower">🌸</div>
+        <h3>Join Premium</h3>
+        <p>$9.99/m</p>
+        <div class="plans">Explore plans</div>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="topbar">
+        <div class="topbar-text">
+          <h1>Welcome back, Emily!</h1>
+          <p>Easily manage your upcoming sessions and track client progress.</p>
+        </div>
+        <div class="topbar-icons">
+          <i class="fa-solid fa-circle-question"></i>
+          <i class="fa-solid fa-house"></i>
+        </div>
+      </div>
+
+      <div class="cards">
+      <div class="card card-a">
+        <h3>Unpaid invoices</h3>
+        <p>$150</p>
+        <i class="fa-solid fa-layer-group"></i>
+      </div>
+      <div class="card card-b">
+        <h3>Account balance</h3>
+        <p>$250</p>
+        <i class="fa-solid fa-layer-group"></i>
+      </div>
+      <div class="card card-c">
+        <h3>Pending</h3>
+        <p>$500</p>
+        <i class="fa-solid fa-layer-group"></i>
+      </div>
+    </div>
+
+
+      <div class="middle">
+        <div class="section">
+          <h3>Recent Messages</h3>
+          <div class="message-card">
+            <div class="message-left">
+              <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Alice Brown">
+              <div class="message-content">
+                <h4>Alice Brown</h4>
+                <p>Can we try breathing exer...</p>
+              </div>
+            </div>
+            <div class="message-time">11:01</div>
+          </div>
+
+          <div class="message-card">
+            <div class="message-left">
+              <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Emily Carter">
+              <div class="message-content">
+                <h4>Emily Carter</h4>
+                <p>Yes, I’ll add them.</p>
+              </div>
+            </div>
+            <div class="message-time">09:18</div>
+          </div>
+
+          <div class="message-card">
+            <div class="message-left">
+              <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Michael Lee">
+              <div class="message-content">
+                <h4>Michael Lee</h4>
+                <p>Thank you for your help!</p>
+              </div>
+            </div>
+            <div class="message-time">09:18</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>My Clients</h3>
+          <div class="client-card">
+            <div class="top">
+              <div class="eighteen">18</div>
+              <button class="view-all">View all</button>
+            </div>
+            <hr>
+            <div class="middle">
+              <div class="circle-num">12</div>
+              <span>Sessions this week</span>
+            </div>
+            <hr>
+            <div class="bottom">
+              <img src="https://randomuser.me/api/portraits/women/50.jpg" alt="Client 1">
+              <img src="https://randomuser.me/api/portraits/men/40.jpg" alt="Client 2">
+              <div class="circle-num small">+16</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="session-requests">
+        <h3>Session Requests</h3>
+        <table class="session-table">
+          <thead>
+            <tr>
+              <th>Client</th>
+              <th>Requested Time</th>
+              <th>Type</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="session-client">
+                  <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="James Patel">
+                  <span>James Patel</span>
+                </div>
+              </td>
+              <td>Today, 15:00</td>
+              <td>Gestalt Therapy</td>
+              <td><span class="status approved">Approved</span></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="session-client">
+                  <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Sophia Turner">
+                  <span>Hannah Collins</span>
+                </div>
+              </td>
+              <td>Tomorrow, 18:30</td>
+              <td>CBT</td>
+              <td><span class="status pending">Pending</span></td>
+            </tr>
+            <tr>
+              <td>
+                <div class="session-client">
+                  <img src="https://randomuser.me/api/portraits/men/13.jpg" alt="Daniel Kim">
+                  <span>Sara Kim</span>
+                </div>
+              </td>
+              <td>Fri, 10:00</td>
+              <td>ACT Session</td>
+              <td><span class="status declined">Declined</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="right-bar">
+      <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily White" class="profile-pic">
+      <h2>Emily Carter</h2>
+      <div class="title">Clinical Psychologist</div>
+
+      <div class="status-dropdown">
+        <button class="status-btn">🟢 Available </button>
+      </div>
+      <div class="agenda">My agenda
+        <button class="view-all">View all</button>
+      </div>
+      <div class="calendar-strip">
+        <div class="day"><span>Mon</span><span>12</span></div>
+        <div class="day active"><span>Tue</span><span>13</span></div>
+        <div class="day"><span>Wed</span><span>14</span></div>
+        <div class="day"><span>Thu</span><span>15</span></div>
+        <div class="day"><span>Fri</span><span>16</span></div>
+        <div class="day"><span>Sat</span><span>17</span></div>
+        <div class="day"><span>Sun</span><span>18</span></div>
+      </div>
+
+      <div class="agenda-list">
+        <div class="agenda-card">
+          <div class="agenda-info">
+            <strong>Calm & Focus Group</strong>
+            <span>13:30-13:30</span>
+          </div>
+          <div class="agenda-participants">
+            <img src="https://randomuser.me/api/portraits/men/21.jpg" alt="Client 1">
+            <img src="https://randomuser.me/api/portraits/women/34.jpg" alt="Client 2">
+          </div>
+        </div>
+
+        <div class="agenda-card">
+          <div class="agenda-info">
+            <strong>1:1 with T. Morgan</strong>
+            <span>14:30-15:15</span>
+          </div>
+          <div class="agenda-participants">
+            <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Client 3">
+          </div>
+        </div>
+
+        <div class="agenda-card">
+          <div class="agenda-info">
+            <strong>1:1 with S. Green</strong>
+            <span>16:30-17:00</span>
+          </div>
+          <div class="agenda-participants">
+            <img src="https://randomuser.me/api/portraits/men/46.jpg" alt="Client 4">
+          </div>
+        </div>
+
+        <div class="agenda-card">
+          <div class="agenda-info">
+            <strong>1:1 with M. Carter</strong>
+            <span>18:00-19:00</span>
+          </div>
+          <div class="agenda-participants">
+            <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="Client 5">
+          </div>
+        </div>
+      </div>
+
+      <button class="agenda-btn">All upcoming events</button>
+    </div>
+  </div>
+</body>
+</html>
